@@ -1,3 +1,5 @@
+import { Container } from "@chakra-ui/react"
+
 interface ICard {
   id: number,
   paragraph: string,
@@ -6,10 +8,10 @@ interface ICard {
 
 export const Card = ({ id, paragraph, details }: ICard) => {
   return(
-    <div>
+    <Container>
       <h1>Card {id}</h1>
       <p>{paragraph}</p>
       <p>{details}</p>
-    </div>
+    </Container>
   )
 }

@@ -1,9 +1,13 @@
-import './Header.css'
+import { Box, Center, Text } from '@chakra-ui/react'
 
 export const Header  = () => {
   return(
-    <div className='header'>
-      Dio Bank
-    </div>
+    <Box marginBottom='8' height='20' backgroundColor={'#ccc'}>
+      <Center mt='auto'>
+        <Text>
+          Dio Bank
+        </Text>
+      </Center>
+    </Box>
   )
 }
